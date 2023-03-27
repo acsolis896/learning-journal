@@ -10,15 +10,23 @@ body {
 nav {
     display: flex;
     width: 100%;
+    height: 4em;
+}
+
+nav img {
+    height: 35px;
+    width: 35px;
 }
 
 ul {
-    text-decoration: none;
     list-style: none;
     display: flex;
     gap: 10px;
     text-transform: uppercase;
     margin-left: auto;
+}
+a {
+    text-decoration: none;
 }
 
 .hero {
@@ -38,7 +46,6 @@ ul {
 
 .blog-post-container {
     align-self: center;
-    border: 2px solid red;
 }
 
 .blog-post-container p, .blog-post-container img {

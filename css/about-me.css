@@ -11,6 +11,16 @@ nav {
     display: flex;
     width: 100%;
     background-color: white;
+    height: 4em;
+}
+
+nav img {
+    height: 35px;
+    width: 35px;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
