@@ -32,13 +32,6 @@ ul {
     margin-left: auto;
 }
 
-.hero {
-    display: grid;
-    grid-template: repeat(2, 1fr) / 182px auto;
-    grid-template-areas: 
-        "image title"
-        "image description";
-}
 
 .hero img {
     grid-area: image;
@@ -62,6 +55,14 @@ footer {
 }
 
 @media (min-width: 600px) {
+    .hero {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 182px auto;
+        grid-template-areas: 
+            "image title"
+            "image description";
+    }
+    
     .blog-post-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
