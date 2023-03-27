@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.hero {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 182px auto;
+    grid-template-areas: 
+        "image title"
+        "image description";
+}
+
+.hero img {
+    grid-area: image;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.hero h1 {grid-area: title}
+.hero p {grid-area: description}
+
+footer {
+    text-align: center;
+    background-color: #202020;
+    color: #ECECEC;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
