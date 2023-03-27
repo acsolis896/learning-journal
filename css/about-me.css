@@ -40,6 +40,7 @@ ul {
 .hero h1 {grid-area: title}
 .hero p {grid-area: description}
 
+
 footer {
     text-align: center;
     background-color: #202020;
@@ -48,4 +49,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .blog-post-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
